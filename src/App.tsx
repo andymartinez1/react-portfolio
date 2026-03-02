@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer/Footer.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
+import ScrollToTopLink from "./components/ScrollToTopLink.jsx";
+import About from "./pages/About.jsx";
+import Education from "./pages/Education.jsx";
+import Home from "./pages/Home.jsx";
+import NoPage from "./pages/NoPage.jsx";
+import Projects from "./pages/Projects.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <div className="fixed-background" aria-hidden="true" />
+      <ScrollToTopLink />
+      <Navbar />
+      <main className="main">
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </div>
+      </main>
+      <ScrollToTopButton />
+      <Footer />
+    </BrowserRouter>
+  );
 }
-
-export default App

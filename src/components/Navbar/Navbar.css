@@ -1,0 +1,136 @@
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navbar-logo-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.navbar-logo-text {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2rem;
+}
+
+.desktop-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 1rem;
+  padding: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.navbar-list-item {
+  margin: 0 1rem;
+  list-style-type: none;
+}
+
+.navbar-list-item img {
+  height: 3rem;
+}
+
+.navbar-list-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.navbar-list-item a.active {
+  p {
+    color: #f7924a;
+    transform: scale(1.1);
+  }
+}
+
+.navbar-list-item a p {
+  font-size: 1.3rem;
+}
+
+.navbar-list-item a:hover {
+  box-shadow: 0 -4px 0px #fff inset;
+}
+
+.toggle-menu {
+  cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .desktop-links {
+    display: none;
+  }
+  .toggle-menu {
+    display: block;
+    z-index: 10;
+  }
+  .mobile-links {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(175, 127, 154, 0.897),
+      rgba(2, 38, 138, 0.795)
+    );
+    width: 250px;
+    height: 100%;
+    padding: 5rem 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1;
+  }
+
+  .navbar-list-item {
+    list-style-type: none;
+  }
+  .navbar-list-item a {
+    transition: all 0.3s;
+  }
+  .navbar-list-item a,
+  .navbar-list-item a:hover,
+  .navbar-list-item a p,
+  .navbar-list-item a p:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    padding: 0rem;
+    font-size: 1.5rem;
+  }
+  .navbar-list-item a:hover {
+    box-shadow: 0 -4px 0px #fff inset;
+  }
+}
