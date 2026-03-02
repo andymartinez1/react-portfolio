@@ -1,4 +1,12 @@
 import Resume from "../assets/files/Andrew-Martinez-Resume.pdf";
+import APIsIcon from "../assets/img/icons/APIs.svg";
+import BackendDevelopmentIcon from "../assets/img/icons/Backend-Development.svg";
+import ContinuedEducationIcon from "../assets/img/icons/Continued-Education.svg";
+import DatabaseIcon from "../assets/img/icons/Database.svg";
+import FrontendIntegrationIcon from "../assets/img/icons/Frontend-Integration.svg";
+import ScalabilityIcon from "../assets/img/icons/Scalability.svg";
+import SecurityIcon from "../assets/img/icons/Security.svg";
+import ServerIcon from "../assets/img/icons/Server.svg";
 
 export default function About() {
   return (
@@ -8,7 +16,7 @@ export default function About() {
           <ul className="about-list">
             <li className="about-item">
               <img
-                src="src/assets/img/icons/Backend-Development.svg"
+                src={BackendDevelopmentIcon}
                 alt="backend-developer-icon"
               />
               <h2>Backend Developer</h2>
@@ -22,7 +30,7 @@ export default function About() {
             </li>
             <li className="about-item">
               <img
-                src="src/assets/img/icons/Frontend-Integration.svg"
+                src={FrontendIntegrationIcon}
                 alt="frontend-developer-icon"
               />
               <h2>Frontend Developer</h2>
@@ -37,7 +45,7 @@ export default function About() {
             </li>
             <li className="about-item">
               <img
-                src="src/assets/img/icons/Continued-Education.svg"
+                src={ContinuedEducationIcon}
                 alt="continued-education-icon"
               />
               <h2>Continuing Education</h2>
@@ -59,45 +67,39 @@ export default function About() {
         <div className="competencies-section">
           <ul className="core-competencies-list">
             <li className="core-competencies-item">
-              <img src="src/assets/img/icons/Database.svg" alt="Database" />
+              <img src={DatabaseIcon} alt="Database" />
               <p>
                 Database implementation using SQL or NoSQL based on application
                 requirements.
               </p>
             </li>
             <li className="core-competencies-item">
-              <img src="src/assets/img/icons/Security.svg" alt="Security" />
+              <img src={SecurityIcon} alt="Security" />
               <p>
                 Security using authentication and authorization. Utilizing JWT,
                 OAuth and encryption.
               </p>
             </li>
             <li className="core-competencies-item">
-              <img src="src/assets//img/icons/APIs.svg" alt="APIs" />
+              <img src={APIsIcon} alt="APIs" />
               <p>
                 REST APIs utilizing CRUD operations. Implementing security and
                 error handling and validation.
               </p>
             </li>
             <li className="core-competencies-item">
-              <img
-                src="src/assets//img/icons/Scalability.svg"
-                alt="Scalability"
-              />
+              <img src={ScalabilityIcon} alt="Scalability" />
               <p>Scalability using cloud services and microservices.</p>
             </li>
             <li className="core-competencies-item">
-              <img src="src/assets//img/icons/Server.svg" alt="Server" />
+              <img src={ServerIcon} alt="Server" />
               <p>
                 Web servers, Version Control Systems, containerization,
                 deployment and CI/CD.
               </p>
             </li>
             <li className="core-competencies-item">
-              <img
-                src="src/assets//img/icons/Frontend-Integration.svg"
-                alt="Frontend Integration"
-              />
+              <img src={FrontendIntegrationIcon} alt="Frontend Integration" />
               <p>
                 Frontend integration using HTML, CSS and JavaScript. Using
                 libraries and frameworks such as React, Angular and Thymeleaf

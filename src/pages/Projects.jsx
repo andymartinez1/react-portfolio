@@ -1,3 +1,8 @@
+import { FaGithub, FaYoutube } from "react-icons/fa";
+import BudgetAppImage from "../assets/img/projects/budget-app.webp";
+import ProductManagementImage from "../assets/img/projects/product-management-system.webp";
+import WardrobeInventoryImage from "../assets/img/projects/wardrobe-inventory.webp";
+
 export default function Projects() {
   return (
     <section className="projects">
@@ -13,9 +18,9 @@ export default function Projects() {
     </div>
     <div className="project-links">
       <a href="https://github.com/andymartinez1/ProductManagementSystem">
-        View on GitHub <i className="fa-brands fa-github"></i></a>
+        View on GitHub <FaGithub /></a>
       <a href="https://www.youtube.com/watch?v=thTlFYW68hw">
-        View on YouTube <i className="fa-brands fa-youtube"></i></a>
+        View on YouTube <FaYoutube /></a>
     </div>
     <div className="project-tags">
       <span>ASP.NET</span>
@@ -24,13 +29,13 @@ export default function Projects() {
       <span>SQL Server</span>
     </div>
     <div className="project-image">
-      <img src="/src/assets/img/projects/product-management-system.png" alt="Project"/>
+      <img src={ProductManagementImage} alt="Project"/>
     </div>
   </div>
 
   <div className="project-card">
     <div className="project-image">
-      <img src="/src/assets/img/projects/budget-app.png" alt="Project"/>
+      <img src={BudgetAppImage} alt="Project"/>
     </div>
     <div className="project-description">
       <h2>Budget App</h2>
@@ -44,9 +49,9 @@ export default function Projects() {
     </div>
     <div className="project-links">
       <a href="https://github.com/andymartinez1/Budget-App">
-        View on GitHub <i className="fa-brands fa-github"></i></a>
+         View on GitHub <FaGithub /></a>
       <a href="https://github.com/andymartinez1/Budget-App">
-        View on YouTube <i className="fa-brands fa-youtube"></i></a>
+        View on YouTube <FaYoutube /></a>
     </div>
     <div className="project-tags">
       <span>ASP.NET Core MVC</span>
@@ -68,9 +73,9 @@ export default function Projects() {
     </div>
     <div className="project-links">
       <a href="https://github.com/andymartinez1/WardrobeInventory">
-        View on GitHub <i className="fa-brands fa-github"></i></a>
+         View on GitHub <FaGithub /></a>
       <a href="https://github.com/andymartinez1/WardrobeInventory">
-        View on YouTube <i className="fa-brands fa-youtube"></i></a>
+        View on YouTube <FaYoutube /></a>
     </div>
     <div className="project-tags">
       <span>Blazor</span>
@@ -78,10 +83,7 @@ export default function Projects() {
       <span>SQL Server</span>
     </div>
     <div className="project-image">
-      <img
-        src="/src/assets/img/projects/wardrobe-inventory.png"
-        alt="Project"
-      />
+      <img src={WardrobeInventoryImage} alt="Project" />
     </div>
   </div>
 

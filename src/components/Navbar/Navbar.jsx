@@ -1,6 +1,10 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import AboutIcon from "../../assets/img/icons/About.svg";
+import EducationIcon from "../../assets/img/icons/Education.svg";
+import HomeIcon from "../../assets/img/icons/Home.svg";
+import ProjectsIcon from "../../assets/img/icons/Projects.svg";
 import Logo from "../../assets/img/logos/Logo-White-T.webp";
 import "./Navbar.css";
 
@@ -37,25 +41,25 @@ export default function Navbar() {
         <ul className="desktop-links">
           <li className="navbar-list-item">
             <NavLink to="/">
-              <img src="src/assets/img/Icons/Home.svg" alt="home" />
+              <img src={HomeIcon} alt="home" />
               <p> &nbsp; Home</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/about">
-              <img src="src/assets/img/Icons/About.svg" alt="about" />{" "}
+              <img src={AboutIcon} alt="about" />{" "}
               <p> &nbsp; About</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/education">
-              <img src="src/assets/img/Icons/Education.svg" alt="education" />{" "}
+              <img src={EducationIcon} alt="education" />{" "}
               <p> &nbsp; Education</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/projects">
-              <img src="src/assets/img/Icons/Projects.svg" alt="projects" />{" "}
+              <img src={ProjectsIcon} alt="projects" />{" "}
               <p> &nbsp; Projects</p>
             </NavLink>
           </li>
@@ -72,25 +76,25 @@ export default function Navbar() {
         <ul className="mobile-links" ref={ref}>
           <li className="navbar-list-item">
             <NavLink to="/" onClick={() => setIsOpen(false)}>
-              <img src="src/assets/img/Icons/Home.svg" alt="home" />{" "}
+              <img src={HomeIcon} alt="home" />{" "}
               <p> &nbsp; Home</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/about" onClick={() => setIsOpen(false)}>
-              <img src="src/assets/img/Icons/About.svg" alt="about" />{" "}
+              <img src={AboutIcon} alt="about" />{" "}
               <p> &nbsp; About</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/education" onClick={() => setIsOpen(false)}>
-              <img src="src/assets/img/Icons/Education.svg" alt="education" />{" "}
+              <img src={EducationIcon} alt="education" />{" "}
               <p> &nbsp; Education</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/projects" onClick={() => setIsOpen(false)}>
-              <img src="src/assets/img/Icons/Projects.svg" alt="projects" />{" "}
+              <img src={ProjectsIcon} alt="projects" />{" "}
               <p> &nbsp; Projects</p>
             </NavLink>
           </li>
