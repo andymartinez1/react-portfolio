@@ -1,27 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
 :root {
   --primary-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
   --color-white: #fafafa;
   --color-black: #121212;
   --color-grey: #333;
   --color-orange: #f7924a;
-  --color-blue: #61dafb;
-  --button-gradient: linear-gradient(
-    45deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
+  --button-gradient: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(45deg, #222, #111);
@@ -31,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 100%;
   z-index: -101;
 }
@@ -41,11 +37,8 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(
-      circle at center,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.5)
-    ),
+  background:
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
     url('./assets/img/background-img/Site-Background.webp');
   background-repeat: no-repeat;
   background-position: top;
@@ -64,6 +57,7 @@ body {
 
 main {
   display: flex;
+  width: 100%;
   margin: auto;
   min-width: 90%;
 }
@@ -99,6 +93,7 @@ a {
 }
 
 .content {
+  width: 100%;
   max-width: 90vw;
   margin: auto;
   flex: 1;
@@ -107,7 +102,7 @@ a {
 /* HOME */
 
 .home {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +126,7 @@ a {
 /* 404 */
 
 .not-found {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   min-height: 80vh;
   max-width: 50%;
   margin: 0 auto 5rem;
@@ -303,7 +298,7 @@ a {
 }
 
 .resume-button::after {
-  content: "";
+  content: '';
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -315,7 +310,7 @@ a {
 }
 
 .resume-button::before {
-  content: "";
+  content: '';
   background: var(--button-gradient);
   position: absolute;
   top: -2px;
@@ -351,7 +346,7 @@ a {
 }
 
 /* EDUCATION */
-.education{
+.education {
   min-height: 85vh;
 }
 
@@ -398,6 +393,7 @@ a {
   font-size: 1.6rem;
   padding-top: 1rem;
   margin: 0;
+  color: var(--color-orange);
 }
 
 .education-school {
@@ -448,22 +444,22 @@ a {
 }
 
 .project-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  & a {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: var(--color-orange);
 
-    & a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 1.1rem;
-        margin: .5rem 0;
-        color: var(--color-orange);
-
-        & svg{
-          margin-left: .4rem;
-        }
+    & svg {
+      margin-left: 0.4rem;
     }
+  }
 }
 
 .project-tags {
@@ -475,7 +471,7 @@ a {
     background-color: var(--color-orange);
     color: var(--color-grey);
     border-radius: 15px;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
     transition: opacity 0.3s ease-in 0.3s;
   }
@@ -486,6 +482,7 @@ a {
     margin: 0.5rem 0 0 0;
     font-size: 1.6rem;
     font-weight: 500;
+    color: var(--color-orange);
   }
 
   & p {
@@ -542,14 +539,15 @@ a {
   position: fixed;
   font-size: 1.2rem;
   right: 25px;
-  bottom: 55px;
+  bottom: 110px;
   height: 50px;
   width: 50px;
-  background-color: var(--color-grey);
+  background-color: rgba(51, 51, 51, 0.55);
   color: var(--color-white);
   outline: none;
   border: none;
   border-radius: 50%;
+  z-index: 1000;
   transition: all 1s;
   opacity: 0;
   pointer-events: none;
@@ -574,7 +572,6 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -593,7 +590,7 @@ a {
   }
 
   .content {
-    width: 100vw;
+    width: 100%;
   }
 
   .navbar-logo {
@@ -604,12 +601,12 @@ a {
   }
 
   .home {
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
   }
 
   .not-found {
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     padding: 0 1.5rem;
     box-sizing: border-box;
@@ -704,10 +701,14 @@ a {
   }
 
   .education-card {
-    max-width: 550px;
+    width: min(700px, calc(100vw - 2rem));
+    max-width: 100%;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .developer-icon img {
@@ -780,14 +781,20 @@ a {
   }
 
   .education-card {
-    max-width: 85vw;
+    width: calc(100vw - 1.5rem);
+    max-width: 100%;
     margin: 0 auto 1rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .education-card-1,
   .education-card-2,
   .education-card-3 {
-    padding: 0 0.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 1rem;
   }
 
   .education-name {

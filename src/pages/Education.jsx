@@ -1,5 +1,5 @@
-import FSU from "../assets/img/logos/FSU-Logo.webp";
-import MWCC from "../assets/img/logos/MWCC-Logo.webp";
+import FSU from '../assets/img/logos/FSU-Logo.webp';
+import MWCC from '../assets/img/logos/MWCC-Logo.webp';
 
 export default function Education() {
   return (
@@ -9,9 +9,7 @@ export default function Education() {
       <div className="education-list">
         <div className="education-card-1">
           <div className="education-card ">
-            <h3 className="education-name">
-              Master&apos;s Degree, Computer Science
-            </h3>
+            <h3 className="education-name">Master&apos;s Degree, Computer Science</h3>
             <h4 className="education-school">Fitchburg State University</h4>
             <p className="education-description">
               Minor: Data Science
@@ -32,9 +30,7 @@ export default function Education() {
             <img src={FSU} alt="FSU Logo" />
           </div>
           <div className="education-card">
-            <h3 className="education-name">
-              Bachelor&apos;s Degree, Computer Information Systems
-            </h3>
+            <h3 className="education-name">Bachelor&apos;s Degree, Computer Information Systems</h3>
             <h4 className="education-school">Fitchburg State University</h4>
             <p className="education-description">
               Minor: Computer Science
@@ -56,9 +52,7 @@ export default function Education() {
             <h3 className="education-name">
               Associate&apos;s Degree, Computer Information Systems
             </h3>
-            <h4 className="education-school">
-              Mount Wachusett Community College
-            </h4>
+            <h4 className="education-school">Mount Wachusett Community College</h4>
             <p className="education-description">
               <strong>GPA: 3.61</strong>
               <br />

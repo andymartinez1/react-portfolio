@@ -1,12 +1,12 @@
-import Resume from "../assets/files/Andrew-Martinez-Resume.pdf";
-import APIsIcon from "../assets/img/icons/APIs.svg";
-import BackendDevelopmentIcon from "../assets/img/icons/Backend-Development.svg";
-import ContinuedEducationIcon from "../assets/img/icons/Continued-Education.svg";
-import DatabaseIcon from "../assets/img/icons/Database.svg";
-import FrontendIntegrationIcon from "../assets/img/icons/Frontend-Integration.svg";
-import ScalabilityIcon from "../assets/img/icons/Scalability.svg";
-import SecurityIcon from "../assets/img/icons/Security.svg";
-import ServerIcon from "../assets/img/icons/Server.svg";
+import Resume from '../assets/files/Andrew-Martinez-Resume.pdf';
+import APIsIcon from '../assets/img/icons/APIs.svg';
+import BackendDevelopmentIcon from '../assets/img/icons/Backend-Development.svg';
+import ContinuedEducationIcon from '../assets/img/icons/Continued-Education.svg';
+import DatabaseIcon from '../assets/img/icons/Database.svg';
+import FrontendIntegrationIcon from '../assets/img/icons/Frontend-Integration.svg';
+import ScalabilityIcon from '../assets/img/icons/Scalability.svg';
+import SecurityIcon from '../assets/img/icons/Security.svg';
+import ServerIcon from '../assets/img/icons/Server.svg';
 
 export default function About() {
   return (
@@ -15,47 +15,33 @@ export default function About() {
         <div className="about-section">
           <ul className="about-list">
             <li className="about-item">
-              <img
-                src={BackendDevelopmentIcon}
-                alt="backend-developer-icon"
-              />
+              <img src={BackendDevelopmentIcon} alt="backend-developer-icon" />
               <h2>Backend Developer</h2>
               <p>
-                I started my journey into the world of development learning
-                different languages and immediately grew to enjoy Java and
-                JavaScript. I have since expanded my knowledge to include
-                frameworks like Spring and Node.js. My main focus has been
-                creating RESTful APIs and prioritizing security.
+                I started my journey into the world of development learning different languages and
+                immediately grew to enjoy Java and JavaScript. I have since expanded my knowledge to
+                include frameworks like Spring and Node.js. My main focus has been creating RESTful
+                APIs and prioritizing security.
               </p>
             </li>
             <li className="about-item">
-              <img
-                src={FrontendIntegrationIcon}
-                alt="frontend-developer-icon"
-              />
+              <img src={FrontendIntegrationIcon} alt="frontend-developer-icon" />
               <h2>Frontend Developer</h2>
               <p>
-                Though my passion is backend development, I wanted to show my
-                work in a more visual way. I started learning front-end
-                development and have since built several websites using HTML,
-                CSS, and JavaScript. I am experienced with libraries and
-                frameworks such as React and Angular. I also have experience
-                with Bootstrap and Tailwind.
+                Though my passion is backend development, I wanted to show my work in a more visual
+                way. I started learning front-end development and have since built several websites
+                using HTML, CSS, and JavaScript. I am experienced with libraries and frameworks such
+                as React and Angular. I also have experience with Bootstrap and Tailwind.
               </p>
             </li>
             <li className="about-item">
-              <img
-                src={ContinuedEducationIcon}
-                alt="continued-education-icon"
-              />
+              <img src={ContinuedEducationIcon} alt="continued-education-icon" />
               <h2>Continuing Education</h2>
               <p>
-                As technology continues to evolve, I am always looking to
-                educate myself on the latest trends and tools. I am currently
-                learning about implementing AI to increase efficiency and
-                productivity. I prioritize strengthening my understanding of
-                fundamental concepts before utilizing frameworks to assist in
-                development.
+                As technology continues to evolve, I am always looking to educate myself on the
+                latest trends and tools. I am currently learning about implementing AI to increase
+                efficiency and productivity. I prioritize strengthening my understanding of
+                fundamental concepts before utilizing frameworks to assist in development.
               </p>
             </li>
           </ul>
@@ -68,23 +54,20 @@ export default function About() {
           <ul className="core-competencies-list">
             <li className="core-competencies-item">
               <img src={DatabaseIcon} alt="Database" />
-              <p>
-                Database implementation using SQL or NoSQL based on application
-                requirements.
-              </p>
+              <p>Database implementation using SQL or NoSQL based on application requirements.</p>
             </li>
             <li className="core-competencies-item">
               <img src={SecurityIcon} alt="Security" />
               <p>
-                Security using authentication and authorization. Utilizing JWT,
-                OAuth and encryption.
+                Security using authentication and authorization. Utilizing JWT, OAuth and
+                encryption.
               </p>
             </li>
             <li className="core-competencies-item">
               <img src={APIsIcon} alt="APIs" />
               <p>
-                REST APIs utilizing CRUD operations. Implementing security and
-                error handling and validation.
+                REST APIs utilizing CRUD operations. Implementing security and error handling and
+                validation.
               </p>
             </li>
             <li className="core-competencies-item">
@@ -93,17 +76,14 @@ export default function About() {
             </li>
             <li className="core-competencies-item">
               <img src={ServerIcon} alt="Server" />
-              <p>
-                Web servers, Version Control Systems, containerization,
-                deployment and CI/CD.
-              </p>
+              <p>Web servers, Version Control Systems, containerization, deployment and CI/CD.</p>
             </li>
             <li className="core-competencies-item">
               <img src={FrontendIntegrationIcon} alt="Frontend Integration" />
               <p>
-                Frontend integration using HTML, CSS and JavaScript. Using
-                libraries and frameworks such as React, Angular and Thymeleaf
-                for either server-side or client-side rendering.
+                Frontend integration using HTML, CSS and JavaScript. Using libraries and frameworks
+                such as React, Angular and Thymeleaf for either server-side or client-side
+                rendering.
               </p>
             </li>
           </ul>
@@ -210,7 +190,7 @@ export default function About() {
       </section>
       <div className="resume">
         <a href={Resume} className="resume-button">
-            View Resume
+          View Resume
         </a>
       </div>
     </>

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { FaAngleUp } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import { FaAngleUp } from 'react-icons/fa';
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,21 +9,21 @@ export default function ScrollToTopButton() {
       setIsVisible(window.scrollY > 200);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const ScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <button
-      className={`scroll-to-top ${isVisible ? "active" : ""}`}
+      className={`scroll-to-top ${isVisible ? 'active' : ''}`}
       onClick={ScrollToTop}
       aria-label="Scroll to top"
       type="button"
