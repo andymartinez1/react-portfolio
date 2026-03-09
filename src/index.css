@@ -748,6 +748,14 @@ a {
     width: 70px;
   }
 
+  .home-heading {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1.1rem;
+  }
+
   .not-found-code {
     font-size: 3.2rem;
   }
@@ -789,6 +797,10 @@ a {
     box-sizing: border-box;
   }
 
+  .projects {
+    padding: 0 0.25rem;
+  }
+
   .education-card-1,
   .education-card-2,
   .education-card-3 {
@@ -807,6 +819,66 @@ a {
 
   .footer-content p {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .home-heading {
+    font-size: 1.7rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .about-item {
+    & img {
+      height: 5rem;
+    }
+  }
+
+  .education-name {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .education-school {
+    font-size: 1.1rem;
+  }
+
+  .education-description {
+    font-size: 1.05rem;
+  }
+
+  .core-competencies-item {
+    & img {
+      height: 2.5rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  .developer-icon img {
+    height: 50px;
+    padding: 0.6rem;
+  }
+
+  .project-description h2 {
+    font-size: 1.3rem;
   }
 }
 

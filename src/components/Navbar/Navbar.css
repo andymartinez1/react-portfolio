@@ -54,6 +54,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
+  gap: 0.8rem;
 }
 
 .navbar-list-item a.active {

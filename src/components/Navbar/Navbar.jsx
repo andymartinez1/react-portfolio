@@ -73,22 +73,22 @@ export default function Navbar() {
         <ul className="mobile-links" ref={ref}>
           <li className="navbar-list-item">
             <NavLink to="/" onClick={() => setIsOpen(false)}>
-              <img src={HomeIcon} alt="home" /> <p> &nbsp; Home</p>
+              <img src={HomeIcon} alt="home" /> <p>Home</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/about" onClick={() => setIsOpen(false)}>
-              <img src={AboutIcon} alt="about" /> <p> &nbsp; About</p>
+              <img src={AboutIcon} alt="about" /> <p>About</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/education" onClick={() => setIsOpen(false)}>
-              <img src={EducationIcon} alt="education" /> <p> &nbsp; Education</p>
+              <img src={EducationIcon} alt="education" /> <p>Education</p>
             </NavLink>
           </li>
           <li className="navbar-list-item">
             <NavLink to="/projects" onClick={() => setIsOpen(false)}>
-              <img src={ProjectsIcon} alt="projects" /> <p> &nbsp; Projects</p>
+              <img src={ProjectsIcon} alt="projects" /> <p>Projects</p>
             </NavLink>
           </li>
         </ul>
