@@ -1,13 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer/Footer.jsx";
-import Navbar from "./components/Navbar/Navbar.jsx";
-import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
-import ScrollToTopLink from "./components/ScrollToTopLink.jsx";
-import About from "./pages/About.jsx";
-import Education from "./pages/Education.jsx";
-import Home from "./pages/Home.jsx";
-import NoPage from "./pages/NoPage.jsx";
-import Projects from "./pages/Projects.jsx";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer/Footer.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+import ScrollToTopButton from './components/ScrollToTopButton.jsx';
+import ScrollToTopLink from './components/ScrollToTopLink.jsx';
+import About from './pages/About.jsx';
+import Education from './pages/Education.jsx';
+import Home from './pages/Home.jsx';
+import NoPage from './pages/NoPage.jsx';
+import Projects from './pages/Projects.jsx';
 
 export default function App() {
   return (
