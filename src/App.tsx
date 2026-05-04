@@ -11,7 +11,7 @@ import Projects from './pages/Projects.jsx';
 
 export default function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename="/react-portfolio/">
       <div className="fixed-background" aria-hidden="true" />
       <ScrollToTopLink />
       <Navbar />
